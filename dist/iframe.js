@@ -18,10 +18,10 @@ var js = (0, _fs.readFileSync)(__dirname + '/assets/iframe.js').toString();
 var css = (0, _fs.readFileSync)(__dirname + '/assets/iframe-button.css').toString();
 
 function iframe(_ref) {
-  var path = _ref.path;
-  var active = _ref.active;
-  var total = _ref.total;
-  var large = _ref.large;
+  var path = _ref.path,
+      active = _ref.active,
+      total = _ref.total,
+      large = _ref.large;
 
   var str = '';
   if (active) str = active + '/';

@@ -12,10 +12,10 @@ var _superagent2 = _interopRequireDefault(_superagent);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function invite(_ref, fn) {
-  var org = _ref.org;
-  var token = _ref.token;
-  var email = _ref.email;
-  var channel = _ref.channel;
+  var org = _ref.org,
+      token = _ref.token,
+      email = _ref.email,
+      channel = _ref.channel;
 
   var data = { email: email, token: token };
 
@@ -36,10 +36,10 @@ function invite(_ref, fn) {
     // return `200 OK`, and provide other information in the body. So we
     // need to check for the correct account scope and call the callback
     // with an error if it's not high enough.
-    var _res$body = res.body;
-    var ok = _res$body.ok;
-    var providedError = _res$body.error;
-    var needed = _res$body.needed;
+    var _res$body = res.body,
+        ok = _res$body.ok,
+        providedError = _res$body.error,
+        needed = _res$body.needed;
 
     if (!ok) {
       if (providedError === 'missing_scope' && needed === 'admin') {

@@ -12,16 +12,16 @@ var _vd2 = _interopRequireDefault(_vd);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function splash(_ref) {
-  var path = _ref.path;
-  var name = _ref.name;
-  var org = _ref.org;
-  var coc = _ref.coc;
-  var logo = _ref.logo;
-  var active = _ref.active;
-  var total = _ref.total;
-  var channels = _ref.channels;
-  var large = _ref.large;
-  var iframe = _ref.iframe;
+  var path = _ref.path,
+      name = _ref.name,
+      org = _ref.org,
+      coc = _ref.coc,
+      logo = _ref.logo,
+      active = _ref.active,
+      total = _ref.total,
+      channels = _ref.channels,
+      large = _ref.large,
+      iframe = _ref.iframe;
 
   var div = (0, _vd2.default)('.splash', !iframe && (0, _vd2.default)('.logos', logo && (0, _vd2.default)('.logo.org'), (0, _vd2.default)('.logo.slack')), (0, _vd2.default)('p', 'Join ', (0, _vd2.default)('b', name),
   // mention single single-channel inline
@@ -40,12 +40,11 @@ function splash(_ref) {
 var pink = '#E01563';
 
 function style() {
-  var _ref2 = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
-
-  var logo = _ref2.logo;
-  var active = _ref2.active;
-  var large = _ref2.large;
-  var iframe = _ref2.iframe;
+  var _ref2 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      logo = _ref2.logo,
+      active = _ref2.active,
+      large = _ref2.large,
+      iframe = _ref2.iframe;
 
   var css = _vd2.default.style();
   css.add('html', { 'font-size': large ? '14px' : '10px' });

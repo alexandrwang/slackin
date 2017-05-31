@@ -24,13 +24,13 @@ var SlackData = function (_EventEmitter) {
   _inherits(SlackData, _EventEmitter);
 
   function SlackData(_ref) {
-    var token = _ref.token;
-    var interval = _ref.interval;
-    var host = _ref.org;
+    var token = _ref.token,
+        interval = _ref.interval,
+        host = _ref.org;
 
     _classCallCheck(this, SlackData);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(SlackData).call(this));
+    var _this = _possibleConstructorReturn(this, (SlackData.__proto__ || Object.getPrototypeOf(SlackData)).call(this));
 
     _this.host = host;
     _this.token = token;

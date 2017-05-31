@@ -17,8 +17,8 @@ var pad = 8; // left / right padding
 var sep = 4; // middle separation
 
 function badge(_ref) {
-  var total = _ref.total;
-  var active = _ref.active;
+  var total = _ref.total,
+      active = _ref.active;
 
   var value = active ? active + '/' + total : '' + total || '–';
   var lw = pad + width(title) + sep; // left side width
@@ -30,9 +30,9 @@ function badge(_ref) {
 
 // generate text with 1px shadow
 function text(_ref2) {
-  var str = _ref2.str;
-  var x = _ref2.x;
-  var y = _ref2.y;
+  var str = _ref2.str,
+      x = _ref2.x,
+      y = _ref2.y;
 
   return [(0, _vd2.default)('text fill=#010101 fill-opacity=.3 x=' + x + ' y=' + (y + 1), str), (0, _vd2.default)('text fill=#fff x=' + x + ' y=' + y, str)];
 }
